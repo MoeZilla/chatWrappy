@@ -1,1 +1,1 @@
-base = "https://api.affiliateplus.xyz/api/chatbot?"
+base = "https://api.affiliateplus.xyz/api/chatbot"
