@@ -1,1 +1,3 @@
 # chatbotapi
+An Unofficial Python API Library to Chatbot for FREE...
+# not completely wait coming soon other 👀lang
