@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 
 setup(
-    name="chatbotapi",
+    name="moechatbot",
     version="0.4",
     description="Unofficial API Library for Chatbot For Free",
-    py_modules=["chatbotapi"],
+    py_modules=["moechatbot"],
     package_dir={'': 'src'},
     install_requires=["requests"],
     extras_require={
