@@ -1,26 +1,14 @@
+from requests.exceptions import HTTPError
 import requests
 
-from src import base
+url = "https://api.affiliateplus.xyz/api"
 
 
-message = ""
-name = "chatbot"
-owner = "moezilla"
-userid = "1"
+def chatbot(msg, ainame, onwer, userid):
+    base = f'{url}/chatbot?message={msg}&botname={ainame}&ownername={owner}&user={userid}'
+    response = requests.get(base)
+    response.raise_for_status()
+    jsonResponse = response.json()
+    message = (jsonResponse["message"])
+    return message
 
-def chat(msg):
-    message = msg
-    body = {
-        'message': message,
-        'name': botname,
-        'onwer': onwername,
-        'userid': user
-    }
-    response = requests.get(url=base, params=body).json()['message']
-    
-    return response
-
-
-
-
-                                                                                                                                                                                                                                                               
