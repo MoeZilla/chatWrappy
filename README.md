@@ -6,11 +6,11 @@ An Unofficial Python API Library to Chatbot for FREE...
 
 ```py
 
-import moechatbot
+import chatWrappy
 
-from moechatbot import moechatbot
+from chatWrappy import chatWrappy
 
-aibot = moechatbot.chatbot(msg='', ainame='', owner='', userid='')
+aibot = chatWrappy.chatbot(msg='', ainame='', owner='', userid='')
 
 print(aibot)
 
