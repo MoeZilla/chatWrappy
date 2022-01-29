@@ -9,6 +9,5 @@ def chatbot(msg, ainame, onwer, userid):
     response = requests.get(base)
     response.raise_for_status()
     jsonResponse = response.json()
-    message = (jsonResponse["message"])
-    return message
+    return jsonResponse["message"]
 
